@@ -1,0 +1,66 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.main h1 {
+  font-size: 4.5rem;
+  line-height: 1.33;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.main h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../img/detalhe.svg) no-repeat center;
+  position: absolute;
+  left: -45px;
+  top: -8px;
+  z-index: -1;
+}
+
+.main p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media screen and (max-width: 1000px) {
+  .main h1 {
+    font-size: 3rem;
+  }
+  .main h1::before {
+    left: -50px;
+    top: -20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .main h1 {
+    font-size: 2rem;
+  }
+
+  .main h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .main img {
+    display: none;
+  }
+}
