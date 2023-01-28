@@ -63,6 +63,7 @@
 @media screen and (max-width: 800px) {
   .experience {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .experience .subtitle {
