@@ -1,0 +1,129 @@
+.bg-formation {
+  background: #141414;
+}
+
+.formation {
+  display: grid;
+  padding: 120px 20px;
+  gap: 100px;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
+.formation::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../img/detalhe.svg) no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
+.formation .subtitle {
+  color: #000000;
+  width: 5ch;
+}
+
+.formation .description {
+  color: #a3a3a3;
+}
+
+.formation .description strong {
+  color: #ffffff;
+}
+
+.formation-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.formation-item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+  background: #000000;
+  border-radius: 4px;
+  position: relative;
+}
+
+.formation-span {
+  font-size: 0.875rem;
+  color: #a3a3a3;
+  text-transform: uppercase;
+}
+
+.type {
+  margin-bottom: 10px;
+}
+
+.formation-title {
+  flex: 1;
+  font-size: 1.125rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.formation-courses {
+  margin-bottom: 60px;
+}
+
+.extra-title {
+  font-size: 0.875rem;
+  color: #8f8f8f;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.extra-title::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.formation-courses .extra-title::before {
+  background: url(../img/cursos.svg) no-repeat center;
+}
+
+.formation-languages .extra-title::before {
+  background: url(../img/idiomas.svg) no-repeat center;
+}
+
+.extra-li {
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.extra-courses li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-li span {
+  color: #8f8f8f;
+}
+
+@media screen and (max-width: 800px) {
+  .formation .subtitle {
+    color: #ffffff;
+  }
+  .formation {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .extra-title::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}

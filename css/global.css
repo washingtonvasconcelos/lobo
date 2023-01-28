@@ -40,18 +40,11 @@ img {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 800px) {
-  .subtitle {
-    font-size: 4rem;
-    word-break: initial;
-    text-transform: capitalize;
-  }
-}
-
 .description {
   font-size: 1.5rem;
   line-height: 1.33;
   max-width: 40ch;
+  margin-bottom: 60px;
 }
 
 .detail::before {
@@ -62,4 +55,12 @@ img {
   background: linear-gradient(#b6f829, #67dd0a);
   position: absolute;
   left: -4px;
+}
+
+@media screen and (max-width: 800px) {
+  .subtitle {
+    font-size: 4rem;
+    word-break: initial;
+    text-transform: capitalize;
+  }
 }
