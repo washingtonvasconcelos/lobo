@@ -32,3 +32,34 @@ img {
   margin: 0 auto;
   padding: 40px 20px;
 }
+
+.subtitle {
+  font-size: 8rem;
+  line-height: 1;
+  word-break: break-all;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+  .subtitle {
+    font-size: 4rem;
+    word-break: initial;
+    text-transform: capitalize;
+  }
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+}
+
+.detail::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -4px;
+}

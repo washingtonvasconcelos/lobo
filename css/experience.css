@@ -1,0 +1,84 @@
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.experience .subtitle {
+  width: 4ch;
+  color: #e0e0e0;
+}
+
+.experience .description {
+  margin-bottom: 60px;
+  color: #525252;
+}
+
+.experience .description strong {
+  color: #141414;
+}
+
+.company {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  gap: 20px 10px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.company-year {
+  position: absolute;
+  top: 20px;
+  left: -80px;
+}
+
+.company-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.company-desc {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #525252;
+}
+
+.company-skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 10px;
+}
+
+.company-skills li {
+  padding: 5px 10px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  .experience {
+    grid-template-columns: 1fr;
+  }
+
+  .experience .subtitle {
+    width: initial;
+    color: #141414;
+  }
+
+  .company-year {
+    position: initial;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .company {
+    grid-template-columns: 1fr;
+  }
+}
